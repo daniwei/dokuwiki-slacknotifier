@@ -1,0 +1,6 @@
+base   slacknotifier
+author daniwei
+date   2022-02-22
+name   Slack Notifier
+desc   Notify page events via Slack
+url    https://www.github.com/daniwei/dokuwiki-slacknotifier
