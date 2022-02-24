@@ -1,9 +1,9 @@
 <?php
 
-$lang['t_created'] = 'Neu erstellt';
-$lang['t_updated'] = 'Neu aktualisiert';
-$lang['t_minor_upd'] = 'Neu geringfügig aktualisiert';
-$lang['t_removed'] = 'Neu entfernt';
+$lang['t_created'] = 'Neue Seite erstellt';
+$lang['t_updated'] = 'Seite aktualisiert';
+$lang['t_minor_upd'] = 'Seite geringfügig aktualisiert';
+$lang['t_removed'] = 'Seite entfernt';
 
 $lang['e_created'] = 'erstellte Seite';
 $lang['e_updated'] = 'aktualisierte Seite';
