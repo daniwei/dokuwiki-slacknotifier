@@ -110,11 +110,12 @@ class helper_plugin_slacknotifier extends DokuWiki_Plugin {
             if( $summary ) $description .= "\n" . $lang['summary'] . ": " . $summary;
         }
         
-        $sectionTitle = array(
-            "type" => "section",
+        $headerTitle = array(
+            "type" => "header",
             "text" => array(
-                "type" => "mrkdwn",
-                "text" => "*===" . $title . "===*"
+                "type" => "plain_text",
+                "text" => $title,
+                "emoji" => true
             )
         );
 
@@ -135,8 +136,9 @@ class helper_plugin_slacknotifier extends DokuWiki_Plugin {
         );
 
         $payload = array(
+            "text" => "DokuWiki " . $title,
             "blocks" => array(
-                $sectionTitle,
+                $headerTitle,
                 $sectionDescription,
                 $sectionFooter
             )
