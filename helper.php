@@ -20,7 +20,7 @@ class helper_plugin_slacknotifier extends DokuWiki_Plugin {
         $this->_payload = $payload;
     }
 
-    public function attic_write($payload) {
+    public function attic_write($filename) {
         if( strpos($filename, 'data/attic') !== false ) {
             return true;
         }
@@ -106,7 +106,7 @@ class helper_plugin_slacknotifier extends DokuWiki_Plugin {
         }
         
         $summary = $this->_summary;
-        if( (strpos($this->_event, 'edit') !== false) && $this -> getConf('notify_show_summary') ) {
+        if( (strpos($this->_event, 'edit') !== false) && $this->getConf('notify_show_summary') ) {
             if( $summary ) $description .= "\n" . $lang['summary'] . ": " . $summary;
         }
         
